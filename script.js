@@ -148,6 +148,7 @@ let spoken_word = words_to_utterance_dict(pages);
 pages.forEach((page) => {
   let page_div_parent = document.createElement("div");
   page_div_parent.style.position = "relative";
+  page_div_parent.style.maxWidth = "100%";
   add_img(page.image, page_div_parent);
   add_btns(page.buttons, page_div_parent);
   poem_section.appendChild(page_div_parent);
