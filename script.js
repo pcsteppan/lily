@@ -64,7 +64,7 @@ function words_to_utterance_dict(pages){
   all_btns.forEach((btn_data) => {
     let utterance = new SpeechSynthesisUtterance(btn_data.string);
     utterance.pitch = 1.8;
-    utterance.rate = 0.6;
+    utterance.rate = 0.9;
     dict[btn_data.string] = utterance;
   })
   return dict;
